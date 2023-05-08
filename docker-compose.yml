@@ -1,0 +1,9 @@
+services:
+
+  redis:
+    image: redis:5
+
+  app:
+    build: .
+    ports:
+      - "8000:8000"
